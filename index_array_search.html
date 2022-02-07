@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>     -------    </title>
+    
+    <!-- In this case, the JavaScript script is in this file (because it's a case study). 
+         In real work, it is recommended to move the script code to a separate JavaScript file! -->
+
+
+    <!-- Exercise 1:
+         Given an array [2, 5, 18, 11, 23, 6, -40, 1, 4,];
+         1. Find the largest element in the array
+         2. Check whether there is an element 5 in the loop, if there is then return its index, if not return null
+         3. Check whether there is an element 10 in the loop, if there is then return its index, if not return null -->
+
+    <!-- Exercise 2:
+         Given: arr = [1,0,2,3,0,4,5,0,0]
+         Count the number of zeros found in the array. -->
+
+  <script type="text/javascript" >
+
+         let arr = [2, 5, 18, 11, 23, 6, -40, 1, 4,];
+         
+         let maxNum = arr[0];
+         let elem = 0;
+         let elem10 = 0;
+         
+              for (var i = 0; i < arr.length; i++) {          
+                   // 1. Find the largest element in the array [2, 5, 18, 11, 23, 6, -40, 1, 4,]
+                   if (maxNum < arr[i]) {
+                       maxNum = arr[i];
+                   }         
+                   // 2. Check whether there is an element 5 in the loop, if there is then return its index, if not return null
+                   if (arr[i] == 5) {
+                        elem +=1;
+                        console.log('an element with index ' + i + ' has a value of 5');
+                        alert('Check whether there is an element 5 in the loop, if there is then return its index, if not return null [2, 5, 18, 11, 23, 6, -40, 1, 4,]: an element with index ' + i + ' has a value of 5');
+                   }          
+                   // 3. Check whether there is an element 10 in the loop, if there is then return its index, if not return null
+                   if (arr[i] == 10) {
+                        elem10 +=1;
+                        console.log('an element with index ' + i + ' has a value of 10');
+                        alert('Check whether there is an element 10 in the loop, if there is then return its index, if not return null [2, 5, 18, 11, 23, 6, -40, 1, 4,]: an element with index ' + i + ' has a value of 10');
+                   } 
+              }     
+         console.log('the largest element in the array ' + maxNum);
+         alert('Find the largest element in the array [2, 5, 18, 11, 23, 6, -40, 1, 4,]: the largest element in the array ' + maxNum);
+         
+              if (elem == 0) { 
+                   console.log('The array is missing an element with a value of 5: null');
+                   alert('The array is missing an element with a value of 5: null'); 
+              }
+              if (elem10 == 0) { 
+                   console.log('the array is missing an element with a value of 10. Null');
+                   alert('Check whether there is an element 10 in the array [2, 5, 18, 11, 23, 6, -40, 1, 4,], if there is then return its index, if not return null: the array is missing an element with a value of 10. Null'); 
+              }
+         
+         // 2.=================================================================================================
+         
+         let arr2 = [1,0,2,3,0,4,5,0,0];
+         
+         let elem0 = 0;
+         
+             for (var i = 0; i < arr2.length; i++) {
+                 if (arr2[i] == 0) {
+                     elem0 +=1;
+                 } 
+             }
+         console.log('the array [1,0,2,3,0,4,5,0,0] contains ' + elem0 + ' elements with a value of 0.')    
+         alert( 'Count the number of zeros found in the array [1,0,2,3,0,4,5,0,0]? Result: the array contains ' + elem0 + ' elements with a value of 0.');
+
+  </script>
+   
+</head>
+<body>
+</body>
+
+</html>
+    
+
+
+
