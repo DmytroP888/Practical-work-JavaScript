@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>     -------    </title>
+
+    <!-- In this case, the JavaScript script is in this file (because it's a case study). 
+        In real work, it is recommended to move the script code to a separate JavaScript file! -->
+
+    <!-- Exercise: 
+         the user must enter in the window the number of points
+         from 0 to 100, as a result, a window will open with 
+         information about the category in which he falls.
+         
+         A 100-95
+         B 85-94
+         C 75-84
+         D 65-74
+         E 60-64
+         FX 0-59          
+        -->
+
+
+<script type="text/javascript" >
+
+// Ternary operator replaces if. Has two execution results true or false
+// condition ? true execution: false execution;
+
+let balls = prompt('To check the results, enter scores from 0 to 100.', [0]);
+
+balls  <= 100 & balls >= 95 ? 
+    console.log('Category - A') & 
+    alert('Congratulations! You are in category A') : 
+balls >= 85 & balls  <= 94 ? 
+    console.log('Category - B') & 
+    alert('Wonderful! You are in category B') : 
+balls >= 75 & balls  <= 84 ?
+    console.log('Category - С') & 
+    alert('Fine! You are in category С') :
+balls >= 65 & balls  <= 74 ?
+    console.log('Category - D') & 
+    alert('Good level! You are in category D') :
+balls >= 60 & balls  <= 64 ?
+    console.log('Category - E') & 
+    alert('Average level! You are in category E') :
+balls >= 0 & balls  <= 59 ?
+    console.log('Category - FX') & 
+    alert('Low score, you still need to study! You are in category FX') :
+balls < 0 || balls  > 100 ?
+    console.log('Error! Enter a valid value between 0 and 100.') & 
+    alert('Error! Enter a valid value between 0 and 100.') : console.log('Error! Enter a valid value between 0 and 100.')
+;               
+
+</script>
+   
+</head>
+<body>
+    
+</body>
+</html> 
+
+
+
